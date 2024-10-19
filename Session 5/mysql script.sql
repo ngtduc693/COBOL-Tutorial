@@ -1,0 +1,37 @@
+CREATE TABLE customers (
+    customerNumber INT(11) NOT NULL,
+    customerName VARCHAR(50) NOT NULL,
+    contactLastName VARCHAR(50) NOT NULL,
+    contactFirstName VARCHAR(50) NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    addressLine1 VARCHAR(50) NOT NULL,
+    addressLine2 VARCHAR(50) DEFAULT NULL,
+    city VARCHAR(50) NOT NULL,
+    state VARCHAR(50) DEFAULT NULL,
+    postalCode VARCHAR(15) DEFAULT NULL,
+    country VARCHAR(50) NOT NULL,
+    creditLimit DECIMAL(10,2) DEFAULT NULL,
+    PRIMARY KEY (customerNumber)
+);
+
+INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2, city, state, postalCode, country, creditLimit) VALUES
+(1, 'Nguyen Thanh Duc', 'Nguyen', 'Thanh Duc', '+84826540246', 'Nguyen Van Linh', 'Phuoc My', 'Da Nang', NULL, '550000', 'Viet Nam', 9000000.00),
+(2, 'Tran Thi B', 'Tran', 'Thi B', '0123456788', '456 Nguyen Van Linh', NULL, 'Da Nang', NULL, '550000', 'Viet Nam', 2000.00),
+(3, 'Le Van C', 'Le', 'Van C', '0123456787', '789 Bach Dang', 'Hoa Hai', 'Da Nang', NULL, '550000', 'Viet Nam', 1500.00),
+(4, 'Hoang Thi D', 'Hoang', 'Thi D', '0123456786', '321 Nguyen Huu Tho', 'My An', 'Da Nang', NULL, '550000', 'Viet Nam', 1200.00),
+(5, 'Phan Van E', 'Phan', 'Van E', '0123456785', '654 Tran Phu', 'Son Tra', 'Da Nang', NULL, '550000', 'Viet Nam', 1100.00),
+(6, 'Ngo Thi F', 'Ngo', 'Thi F', '0123456784', '987 Hoang Sa', NULL, 'Da Nang', NULL, '550000', 'Viet Nam', 1400.00),
+(7, 'Vo Van G', 'Vo', 'Van G', '0123456783', '159 Le Loi', 'Hai Chau', 'Da Nang', NULL, '550000', 'Viet Nam', 1300.00),
+(8, 'Bui Thi H', 'Bui', 'Thi H', '0123456782', '753 Nguyen Van Troi', 'An Hai Dong', 'Da Nang', NULL, '550000', 'Viet Nam', 1250.00),
+(9, 'Ngo Van I', 'Ngo', 'Van I', '0123456781', '258 Hoang Dieu', NULL, 'Da Nang', NULL, '550000', 'Viet Nam', 1150.00),
+(10, 'Pham Thi J', 'Pham', 'Thi J', '0123456780', '852 Quang Trung', 'Nui Thanh', 'Da Nang', NULL, '550000', 'Viet Nam', 1050.00),
+(11, 'Truong Van K', 'Truong', 'Van K', '0123456790', '963 Nguyen Thai Hoc', 'Khuong Ha', 'Da Nang', NULL, '550000', 'Viet Nam', 1350.00),
+(12, 'Dang Thi L', 'Dang', 'Thi L', '0123456791', '147 To Hien Thanh', NULL, 'Da Nang', NULL, '550000', 'Viet Nam', 1450.00),
+(13, 'Vu Van M', 'Vu', 'Van M', '0123456792', '258 Le Duan', 'My Khe', 'Da Nang', NULL, '550000', 'Viet Nam', 1550.00),
+(14, 'Luu Thi N', 'Luu', 'Thi N', '0123456793', '369 Hoang Sa', 'Hoa Khue', 'Da Nang', NULL, '550000', 'Viet Nam', 1650.00),
+(15, 'Nguyen Van O', 'Nguyen', 'Van O', '0123456794', '456 Tran Hung Dao', 'Nam Duong', 'Da Nang', NULL, '550000', 'Viet Nam', 1750.00),
+(16, 'Ngoc Thi P', 'Ngoc', 'Thi P', '0123456795', '567 Hoang Dieu', 'Chinh Gian', 'Da Nang', NULL, '550000', 'Viet Nam', 1850.00),
+(17, 'Tran Van Q', 'Tran', 'Van Q', '0123456796', '678 Nguyen Tri Phuong', NULL, 'Da Nang', NULL, '550000', 'Viet Nam', 1950.00),
+(18, 'Le Thi R', 'Le', 'Thi R', '0123456797', '789 Nguyen Thi Minh Khai', 'Thanh Khe', 'Da Nang', NULL, '550000', 'Viet Nam', 2050.00),
+(19, 'Phan Van S', 'Phan', 'Van S', '0123456798', '890 Phan Chu Trinh', 'Son Tra', 'Da Nang', NULL, '550000', 'Viet Nam', 2150.00),
+(20, 'Vo Thi T', 'Vo', 'Thi T', '0123456799', '901 Hoang Sa', NULL, 'Da Nang', NULL, '550000', 'Viet Nam', 2250.00);
